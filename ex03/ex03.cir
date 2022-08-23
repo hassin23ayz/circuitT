@@ -1,0 +1,13 @@
+* Title: Half Wave Rectifier
+* Analysis : Transient analysis 
+* 1us is the step time. 100ms is the end time
+.tran 1us 100ms uic
+.include ex03.net
+
+* Control commands
+.control
+set color0 = white ; set background as white
+set color1 = black ; set foreground as white
+run
+plot v(b)
+.endc
