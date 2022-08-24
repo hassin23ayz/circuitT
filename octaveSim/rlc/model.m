@@ -5,7 +5,7 @@ function xdot=model(x,t,params)
 tupdate(t);
 #----------------------------------------------
 # Type in Dynamic model equations here
-
+# other model functions get called here 
 #----------------------------------------------
-scopeit(1,[]);
+scopeit(1,[]); # give a list of variables in the array[] to plot 
 endfunction
