@@ -4,9 +4,14 @@
 .include pv.net
 
 * Control commands
-* .control
-* set color0 = white ; set background as white
-* set color1 = black ; set foreground as white
-* run
-* plot v(b)
-* .endc
+.control
+run
+alter Rs 0.3
+run
+alter Rs 0.6
+run
+setplot tran1
+set color0 = white
+set color1 = black
+plot i(vo) vs nvo tran2.i(vo) vs nvo tran3.i(vo) vs nvo
+.endc
