@@ -1,0 +1,6 @@
+* Subcircuit and models file
+
+*Diodes
+.model Def D()
+
+
