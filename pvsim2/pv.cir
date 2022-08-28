@@ -1,0 +1,12 @@
+* Title: Simulation of PV cell 
+* uic = use initial condition 
+.tran 0.01ms 5ms uic
+.include pv.net
+
+* Control commands
+.control
+set color0 = white
+set color1 = black
+run
+plot i(vse) vs v(nv) v(nv)*i(vse)/40 vs v(nv)
+.endc
