@@ -1,0 +1,17 @@
+* Title: Simulation of PV cell 
+* uic = use initial condition 
+.tran 0.01ms 5ms uic
+.include pv.net
+
+* Control commands
+.control
+run
+option temp=0
+run
+option temp=60
+run
+setplot tran1
+set color0 = white
+set color1 = black
+plot i(vo) vs nvo tran2.i(vo) vs nvo tran3.i(vo) vs nvo
+.endc
