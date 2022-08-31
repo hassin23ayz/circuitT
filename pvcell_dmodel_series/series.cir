@@ -1,0 +1,14 @@
+* simulation of series connection of pv cells
+* 
+.tran  0.01ms 5ms  
+.include series.net
+
+
+.control
+set color0 = white    	; set background as white     
+set color1 = black	; set foreground as black
+run
+plot i(vo) vs nvt i(vo) vs nvt2 i(vo) vs nvt-nvt2
+.endc
+
+
