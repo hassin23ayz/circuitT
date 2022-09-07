@@ -1,0 +1,11 @@
+*Buck Boost Converter
+*
+.tran 1us 100ms uic
+.include dcdc_buckboost.net
+
+* Control commands
+.control
+set color0 = white
+set color1 = black
+run
+.endc
