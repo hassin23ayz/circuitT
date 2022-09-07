@@ -1,0 +1,14 @@
+*Boost converter circuit
+*
+.tran 1us 100ms uic
+.include pv_boost.net
+
+* Control commands
+.control
+set color0 = white
+set color1 = black
+run
+* plot i(L)
+plot v(o)
+* plot v(g)
+.endc
