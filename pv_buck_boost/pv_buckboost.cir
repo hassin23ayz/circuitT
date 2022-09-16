@@ -1,0 +1,10 @@
+*Buck-Boost converter circuit with PV source
+*
+.tran 1us 100ms uic
+.include pv_buckboost.net
+
+.control
+set color0 = white      ; set background as white     
+set color1 = black	; set foreground as black
+run
+.endc
