@@ -1,6 +1,8 @@
-* Title: Simulation of PV cell 
-* uic = use initial condition 
-.tran 0.01ms 5ms uic
+* Title: Simulation of PV module in series  
+
+.tran 100ms 10s 0 100u 
+* .options method=gear reltol=1m sparse
+
 .include pv.net
 
 * Control commands
