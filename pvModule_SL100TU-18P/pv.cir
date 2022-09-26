@@ -1,0 +1,18 @@
+* Title: Simulation of PV cell 
+* uic = use initial condition 
+.tran 0.01ms 5ms uic
+.include pv.net
+
+* Control commands
+.control
+set color0 = white
+set color1 = black
+
+run
+
+setplot tran1
+plot tran1.i(vse) vs tran1.v(nv) tran1.v(nv)*tran1.i(vse)/40 vs tran1.v(nv)
+
+.endc
+
+* $ rm pv.net && gnetlist -g spice-sdb -o pv.net pv.sch && ngspice pv.cir
